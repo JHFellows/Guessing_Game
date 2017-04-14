@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Guessing Game</title>
+
+    <!-- Bootstrap and CSS here-->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css"
+      href="https://fonts.googleapis.com/css?family=Creepster">
+    <link href="https://fonts.googleapis.com/css?family=Nosifer" rel="stylesheet">
+  </head>
+  <body>
+
+      <div id='app' class="center container">
+
+        <div id='headers'>
+          <!-- Title and subtitles! -->
+          <h1 id="title"> YOU HAVE ENTERED THE GAME. <br/> YOU MUST PLAY. </h1>
+          <h3 id="instruction1"> I'm thinking of a number between 1 - 100. </h3>
+          <h3 id="instruction2"> Guess wrong 5 times.. and someone will be coming for you.</h3>
+        </div>
+
+        <div id='main'>
+          <div id='input-parent'>
+            <!-- Player's guess input, and submit button -->
+              <input id="player-input" class="center" placeholder="#" maxlength="3" autofocus=autofocus></input>
+              <button id="submit" class="btn disable btn-danger btn-lg">Enter Guess</button>
+          </div>
+
+          <div id='guesses'>
+            <!-- unordered list of guesses -->
+            <ul id="guess-list">
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+              <li class="guess">-</li>
+            </ul>
+          </div>
+
+          <div id="menu-btns">
+            <!-- reset and hint buttons -->
+            <button type="reset" id="reset-button" class="btn btn-danger">Try to Escape!!</button>
+            <button type="button" id="hint-button" class="btn disable btn-danger">Ask for a hint</button>
+          </div>
+        </div>
+      </div>
+
+    <div id='footer' class="center">
+        <div class="row">
+          <div class='col-sm-4'>
+            <img src='fa-logo@2x.png'></img>
+          </div>
+
+          <div class='col-sm-4'>
+            <h4 id="project-by">Project by JENNA</h4>
+          </div>
+
+          <div class='col-sm-4'>
+            <img src='grace_hopper_academy.png'></img>
+          </div>
+
+        </div>
+    </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="GuessingGame.js"></script>
+  </body>
+</html>
